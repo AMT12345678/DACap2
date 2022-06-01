@@ -23,7 +23,7 @@ public class JogoBean {
 			FacesContext.getCurrentInstance().addMessage(null,
 					new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error:", "Erro ao salvar o Jogo"));
 		}
-		return "listagem";
+		return null;
 	}
 
 	public String editar() {
@@ -59,7 +59,8 @@ public class JogoBean {
 		try {
 			List<Integer> numerosPares = JogoDao.buscarValoresPares(jogo);
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Sucesso",
-					"Os pares são" + jogo.getDescricao() + " são: " + numerosPares));
+					"Os pares de"+": "+ jogo.getDescricao() + " são: " + numerosPares));
+			
 
 		} catch (Exception e) {
 

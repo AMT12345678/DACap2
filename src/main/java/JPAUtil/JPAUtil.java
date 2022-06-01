@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class JPAUtil {
-	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("JogoDac");
+	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Jogos");
 	
 	public static EntityManager criarEntityManager() {
 		return emf.createEntityManager();
