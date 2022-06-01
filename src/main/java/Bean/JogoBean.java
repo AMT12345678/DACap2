@@ -64,7 +64,7 @@ public class JogoBean {
 		} catch (Exception e) {
 
 			FacesContext.getCurrentInstance().addMessage(null,
-					new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", "Erro ao mostrar os n�meros pares"));
+					new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", "Erro ao mostrar os pares"));
 		}
 	}
 
