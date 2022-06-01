@@ -59,7 +59,7 @@ public class JogoBean {
 		try {
 			List<Integer> numerosPares = JogoDao.buscarValoresPares(jogo);
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Sucesso",
-					"Os pares s„o" + jogo.getDescricao() + " s√£o: " + numerosPares));
+					"Os pares s„o" + jogo.getDescricao() + " s„o: " + numerosPares));
 
 		} catch (Exception e) {
 
